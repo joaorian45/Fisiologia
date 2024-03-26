@@ -1,0 +1,117 @@
+.container-geral {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* p dividir a tela em 3 colunas iguais lateralmente */
+    width: 100%;
+  
+  }
+  
+  .lado-esquerdo,
+  .lado-direito {
+    align-self: flex-start; /* Alinha no topo */
+    top: 0;
+    margin: 3%;
+    padding: 0%;
+  }
+  
+  .lado-esquerdo p,
+  .lado-direito p {
+    padding: 0%; /* Remove o padding*/
+    margin: 3%; /* Remove a margem  */
+    
+  }
+  /*
+  .lado-direito {
+    margin-right: 60px; 
+    margin-left: 40px;
+  }
+  
+  .lado-esquerdo {
+    margin-left: 60px; 
+    
+  }
+   colocar margem nas divs laterais(ver dps) */
+  
+  
+  .container-imagem {
+    grid-column: 2 / span 1; /* A imagem fica na segunda coluna */
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    align-items: center; /* Centraliza as imagens verticalmente */
+  }
+  
+  .imagem {
+    max-width: 100%; /* Define a largura máxima da imagem para 100% do contêiner */
+    max-height: 100%; /* Define a altura máxima da imagem para 100% do contêiner */
+    object-fit: cover; /* Faz com que a imagem cubra completamente o contêiner, mantendo a proporção */
+  }
+  
+  .imagem2 {
+    position: absolute;
+    left: 49%;
+    bottom: 14%;
+    width: 170px;
+  }
+  
+  .imagem3 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20%;
+  }
+  
+  .imagem4 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20%;
+  }
+  
+  .imagem-sobreposta {
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  #textoEsquerdoImagem1 {
+	font-size: 46px; /* Tamanho padrão para o texto do lado esquerdo */
+}
+#textoDireitoImagem1 {
+	font-size: 24px; /* Tamanho padrão para o texto do lado direito */
+}
+
+#textoEsquerdoImagem2 {
+	font-size: 46px;
+}
+
+#textoDireitoImagem2 {
+	font-size: 46px;
+}
+
+#textoEsquerdoImagem3 {
+	font-size: 46px;
+	top: 0;
+}
+
+#textoDireitoImagem3 {
+
+	font-size: 24px;
+}
+
+#textoEsquerdoImagem4 {
+	font-size: 46px;
+	top: 0;
+}
+
+#textoDireitoImagem4 {
+
+	font-size: 24px;
+}
+
+#textoEsquerdoImagem5 {
+	font-size: 46px;
+	top: 0;
+}
+
+#textoDireitoImagem5 {
+
+	font-size: 24px;
+}
