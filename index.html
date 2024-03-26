@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+  <title>Fisiologia</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  
+   <!-- Css do body -->
+  <link href="/css/index.css" rel="stylesheet">
+
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <link href="/css/variables-red.css" rel="stylesheet">
+  <link href="/css/main.css" rel="stylesheet">
+</head>
+
+<body class="corpo">
+
+  <header id="header" class="header fixed-top" data-scrollto-offset="100">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <h1>Fisio<span>logia</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+
+          <li><a class="nav-link scrollto" href="/">INÍCIO</a></li>
+          <li><a class="nav-link scrollto" href="index.html#projetos">SAIBA MAIS</a></li>
+          <li><a class="nav-link scrollto" href="index.html#team">SOBRE NÓS</a></li>
+          <li><a class="nav-link scrollto" href="index.html#ref">REFERÊNCIAS</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+      </nav>
+      <!-- .navbar -->
+
+      <a class="btn-getstarted scrollto" href="index.html#nossopjt">LER</a>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <section id="hero-animated" class="hero-animated d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+      <img src="/img/emoji-dizzy.png" height="200" width="200" class="img-fluid animated">
+      <h2><span>Cascata de Coagulação</span></h2>
+      <p>Estudantes: Amanda Seixas, Cristopher Lima, Mariane Megliato e João Oliveira
+        <br>Professora: Joyce Ramos</p>
+      <div class="d-flex">
+        <a href="index.html#nossopjt" class="btn-get-started scrollto">Cascata de Coagulação</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- ======= Services Section ======= -->
+    <section id="nossopjt" class="nossopjt">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-5 justify-content-center">
+          
+          <div class="container-geral">
+            <div class="lado-esquerdo">
+              <!-- Texto na div esquerda --> 
+              <p id="textoEsquerdoImagem"></p>
+            </div>
+            
+            <div class="container-imagem" id="container">
+              <div class="imagem-container">
+            <!-- aqui ficam as imagems, cada uma precisa estar c esses mesmos nomes, seguindo a sequencia de id
+                 se uma for ocupar todo o espaço, deve ter a classe imagem, se for ficar sobreposta a outra deve ter uma classe
+               com o memso nome do id e tambem com imagem-sobreposta, e então editar no cc o posicionamento/taanho da imagem sobreposta
+               atraves da imagem com mesma classe que o id-->
+                <img src="/img/imagem1.jpg" id="imagem1" class="imagem" onclick="trocarImagem(2)" style="cursor: pointer;">
+                <img src="/img/imagem2.png" id="imagem2" class="imagem-sobreposta imagem2 zoom" style="display: none;" onclick="trocarConteiner(3)" style="cursor: pointer;">
+                <img src="/img/imagem3.png" id="imagem3" class="imagem imagem3" style="display: none;" onclick="trocarConteiner(4)" style="cursor: pointer;">
+                <img src="/img/imagem4.png" id="imagem4" class="imagem" style="display: none;" onclick="trocarConteiner(5)" style="cursor: pointer;">
+                <img src="/img/imagem5.png" id="imagem5" class="imagem" style="display: none;" onclick="trocarConteiner(6)" style="cursor: pointer;">
+                <img src="/img/imagem6.gif" id="imagem6" class="imagem" style="display: none;" onclick="trocarConteiner(7)" style="cursor: pointer;">
+                <img src="/img/imagem7.jpeg" id="imagem7" class="imagem" style="display: none;" onclick="trocarConteiner(8)" style="cursor: pointer;">              
+                <img src="/img/imagem8.webp" id="imagem8" class="imagem" style="display: none;" onclick="trocarConteiner(9)" style="cursor: pointer;">
+                <img src="/img/imagem9.png" id="imagem9" class="imagem" style="display: none;" onclick="reiniciarCiclo()" style="cursor: pointer;">
+              </div>
+            </div>
+            <div class="lado-direito">
+              <!-- Texto na div direita -->
+            <p id="textoDireitoImagem"></p>
+            </div>
+          </div>
+          
+
+
+          <!-- 
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="img">
+                <img src="/img/branco.png" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-check2-circle"></i>
+                </div>
+                <a href="/compostos" class="stretched-link">
+                  <h3>Nosso Compostos</h3>
+                </a>
+                <p>Leia mais sobre os compostos.</p>
+              </div>
+            </div>
+
+          </div> End Service Item
+          -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Services Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Nosso Grupo</h2>
+          <p>Formado por...</p>
+        </div>
+
+        <div class="row gy-5">
+
+          <div class="col-xl-6 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="/img/mariane.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+                <h4>Mariane Megliato</h4>
+                <span>Medicina Veterinária 3ª Semestre</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-6 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="/img/amanda.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+                <h4>Amanda Seixas</h4>
+                <span>Medicina Veterinária 3ª Semestre</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-6 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="/img/cris.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+                <h4>Cristopher Lima</h4>
+                <span>Medicina Veterinária 3ª Semestre</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-6 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="/img/joaorian.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+                <h4>João Oliveira</h4>
+                <span>Medicina Veterinária 3ª Semestre</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <section id="ref" class="ref">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Referências</h2>
+          <p>Sites, Artigos e Pesquisas utilizadas como fonte.</p>
+        </div>
+
+        <div class="row gy-5">
+
+          <div class="col-xl-6 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-info">
+                <h4>GUYTON, A. C.; HALL, J. E. Tratado de Fisiologia Médica. 13ª ed. Rio de Janeiro: Elsevier Ed., 2017.
+                </h4>
+              </div>
+            </div>
+          </div><!-- End Ref -->
+          <div class="col-xl-6 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-info">
+                <h4>HOFFBRAND, V. A., MOSS, H. A. P. Fundamentos em hematologia. 6 ed. Porto Alegre: Artmed, 2013.
+
+                </h4>
+              </div>
+            </div>
+          </div><!-- End Ref -->
+          <div class="col-xl-6 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-info">
+                <h4>http://revista.fmrp.usp.br/2001/vol34n3e4/</br>fisiologia_coagulacao.pdf
+
+                </h4>
+              </div>
+            </div>
+          </div><!-- End Ref -->
+          <div class="col-xl-6 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-info">
+                <h4>https://www.scielo.br/scielo.php?script=sci_arttext&pid=S15164842010000500016
+
+                </h4>
+              </div>
+            </div>
+          </div><!-- End Ref -->
+          <div class="col-xl-6 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-info">
+                <h4>LORENZI, T. F. Manual de Hematologia Propedêutica e Clínica. 4ª ed. Rio de Janeiro: Guanabara Koogan, 2006.
+
+                </h4>
+              </div>
+            </div>
+          </div><!-- End Ref -->
+        </br>
+        </div>
+      </div>
+    </section><!-- End Ref Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-legal text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <a href="https://ucdb.com"><img src="/img/ucdblogo.jpeg"></img></a>
+        </div>
+
+        <div class="credits">
+          Referências do Código: <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/aos/aos.js"></script>
+  <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/js/main.js"></script>
+  <script src="/js/script.js"></script>
+
+</body>
+
+</html>
